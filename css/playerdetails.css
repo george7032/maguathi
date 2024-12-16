@@ -1,0 +1,321 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #34495e; /* Main background color */
+    color: #ecf0f1; /* Light text for contrast */
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+/* Football Section */
+.football-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #2c3e50; /* Darker shade of the main color */
+}
+
+.football-section h1 {
+    font-size: 3em;
+    color: #ecf0f1; /* Light text for contrast */
+    margin-bottom: 20px;
+}
+
+.football-section p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #bdc3c7; /* Lighter text for readability */
+}
+
+/* Player Profile */
+.player-profile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.player-banner img {
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Player Details */
+.player-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    background-color: #2c3e50; /* Dark background for contrast */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.player-details:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.player-photo img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 6px solid #3498db; /* Keeping bright blue border for contrast */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.player-info h2 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    color: #ecf0f1;
+}
+
+.player-info p {
+    font-size: 1.1em;
+    margin-bottom: 12px;
+    color: #bdc3c7; /* Muted text */
+}
+
+/* Performance Table */
+.performance-table {
+    margin-top: 30px;
+    width: 100%;
+    background-color: #34495e; /* Main color */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #ecf0f1; /* Light border for contrast */
+}
+
+.performance-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.performance-table th, .performance-table td {
+    padding: 16px;
+    text-align: center;
+    border: 1px solid #ecf0f1; /* Light border */
+    font-size: 1.1em;
+}
+
+.performance-table th {
+    background-color: #2980b9; /* Lighter blue for header */
+    color: #ecf0f1;
+    font-weight: bold;
+}
+
+.performance-table td {
+    background-color: #2c3e50; /* Dark background for data */
+    color: #ecf0f1;
+}
+
+.performance-table tr:nth-child(even) td {
+    background-color: #34495e; /* Slightly lighter background for rows */
+}
+
+.performance-table tr:hover {
+    background-color: #16a085; /* Light greenish-blue for hover */
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Player Achievements */
+.player-achievements {
+    background-color: #34495e; /* Main background color */
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 600px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.player-achievements:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.player-achievements h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #2ecc71; /* Green for highlights */
+}
+
+.player-achievements ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.1em;
+}
+
+.player-achievements li {
+    margin-bottom: 10px;
+}
+
+/* Player Skills */
+.player-skills {
+    background-color: #34495e; /* Main background color */
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 600px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.player-skills:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.player-skills h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #2ecc71; /* Green for highlights */
+}
+
+.player-skills ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.1em;
+}
+
+.player-skills li {
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .football-section h1 {
+        font-size: 2.5em;
+    }
+
+    .player-profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .player-banner img {
+        max-width: 100%;
+    }
+
+    .player-details {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .performance-table th, .performance-table td {
+        font-size: 1em;
+    }
+
+    .performance-table table {
+        font-size: 0.9em;
+    }
+
+    .player-photo img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .performance-table {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .player-details {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .performance-table table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .performance-table th, .performance-table td {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .performance-table th, .performance-table td {
+        text-align: left;
+    }
+
+    .player-photo img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .player-info h2 {
+        font-size: 1.6em;
+    }
+
+    .player-info p {
+        font-size: 1em;
+    }
+
+    /* Additional mobile optimizations */
+    .player-banner img {
+        width: 100%;
+    }
+
+    .player-profile {
+        padding: 0;
+    }
+
+    .football-section h1 {
+        font-size: 2.2em;
+    }
+
+    .player-achievements, .player-skills {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .player-details {
+        padding: 15px;
+    }
+
+    .performance-table th, .performance-table td {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    .player-info h2 {
+        font-size: 1.4em;
+    }
+
+    .performance-table table {
+        font-size: 0.85em;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .player-photo img {
+        width: 100px;
+        height: 100px;
+    }
+}
